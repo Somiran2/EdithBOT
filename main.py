@@ -20,5 +20,5 @@ client.load_extension('cogs.poll')
 client.load_extension('cogs.ticket')
 client.load_extension('cogs.badwords')
 client.load_extension('dismusic')
-
+print(client)
 client.run(os.environ['TOKEN'])
