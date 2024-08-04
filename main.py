@@ -7,6 +7,7 @@ intents = discord.Intents.default()
 intents.members = True
 client = commands.Bot(command_prefix='!', intents = intents)
 print(client)
+print(commands)
 
 client.lavalink_nodes = [
     {"host": "losingtime.dpaste.org", "port": 2124, "password": "SleepingOnTrains"},
