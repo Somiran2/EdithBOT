@@ -6,7 +6,7 @@ from discord.ext import commands
 intents = discord.Intents.default()
 intents.members = True
 client = commands.Bot(command_prefix='!', intents = intents)
-
+print(client)
 
 client.lavalink_nodes = [
     {"host": "losingtime.dpaste.org", "port": 2124, "password": "SleepingOnTrains"},
@@ -20,5 +20,5 @@ client.load_extension('cogs.poll')
 client.load_extension('cogs.ticket')
 client.load_extension('cogs.badwords')
 client.load_extension('dismusic')
-print(client)
+
 client.run(os.environ['TOKEN'])
